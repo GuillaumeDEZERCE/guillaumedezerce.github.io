@@ -1,70 +1,372 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Guillaume Dezerce | Développeur web</title>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
 
 </head>
 <body>
+    <!-- Nav -->
     <header>
-        <h1>
-            Je suis
-            <br>
-            Guillaume Dezerce
-            <br>
-            Développeur web en cours d'intégration
-        </h1>
-
-        <div class="Barre_de_chargement">
-            
-        </div>
-
+        <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary" id="navigation">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#home">GD</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#me">A propos de moi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#education">Formation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#experience">Expériences</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#skill">Compétences</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#project">Projets</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#hobby">Loisirs</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#contact">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+          </nav>
     </header>
-
+<!-- Nav end -->
     <main>
-        <h2>
-            A propos de moi
-        </h2>
-        <p>
-            Je m'appelle Guillaume Dezerce, je sui actuellement en reconversion  dans le développement web et mobile. Titulaire d'une Licence STAPS <abbr title="Activités Physiques Adaptées et Santé">APAS</abbr> et actuellement en poste dans un groupement d'employeur en tant qu'agent de développement sportif, adapté et santé, je suis en formation via Transition Pro.
-        </p>
+        <!-- Homepage -->
+        <section id="home">
+            <div class="container">
+                <div class="background">
+                    <img src="" alt="">
+                </div>
+                <div id="home-content">
+                    <div id="home-text">
+                        <h1>
+                            Je suis
+                            <br>
+                            Guillaume Dezerce
+                        </h1>
+                        <h3>
+                            Développeur web Full-Stack / Back
+                        </h3>
+                    </div>
+                    <div id="down-arrow">
+                        <a href="#me" >
+                            <img src="Assets/54572.png" alt="image flèhe vers le bas">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Homepage end -->
+        <!-- About me -->
+        <section id="me">
+            <div class="container">
+                <div id="me-content">
+                    <div id="profil-picture">
+                        <img src="Assets/photodeprofil.jpeg" alt="photo de profil">
+                    </div>
+                    <div id="text-content">
+                        <h2>
+                            A propos de moi
+                        </h2>
+                        <p>
+                            Bonjour, je suis Guillaume Dezerce. Titulaire d'une Licence <abbr title="Sciences et Techniques des Activités Physiques et Sportives">STAPS</abbr> <abbr title="Activités Physiques Adaptées et Santé">APAS</abbr> j'ai travaillé 7 ans dans le domaine de l'Activité Physique Adaptée et Santé.
+                            <br>
+                            Par la suite, j'ai effectué une reconversion dans le développement de sites et d'applications web. J'ai pour cela effectué ma formation avec l'école O'Clock et obtenu le diplôme de "Développeur Web et Web Mobile". 
+                            <br>
+                            Enthousiasmé par le développement web, je suis curieux de découvrir et apprendre de nouvelles technologies. 
+                            <br>
+                            Dans ce portfolio que j'ai réalisé, je vais vous présenter mes compétences, mon parcours ainsi que mes principaux projets. Pour toute question, n'hésitez pas à me contacter.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About me end -->
+        <!-- Educational background -->
+        <section id="education">
+            <div class="container" id="education-content">
+                <!-- <div > -->
+                    <div id="education-content-title">
+                        <h2>
+                            Mes formations
+                        </h2>
+                    </div>
+                    <div id="education-content-text">
+                        <div class="item">
+                            <div class="item-title">
+                                <h5>Déc. 2022 - Mai 2023</h5>
+                            </div>
+                            <div class="item-text">
+                                <h3>Formation de Développeur Web et Web Mobile</h3>
+                                <h4>O'Clock, en téléprésentiel</h4>
+                                <p>Titre professionnel de Développeur Web et Web Mobile de niveau 5 (équivalent à un diplôme bac+2) inscrit au RNCP</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-title">
+                                <h5>2012 - 2015</h5>
+                            </div>
+                            <div class="item-text">
+                                <h3>Divers formations et concours</h3>
+                                <h4>Université de Poitiers (86)</h4>
+                                <p><abbr title="Première Année Commune aux Études de Santé">PACES</abbr> / Master 1 <abbr title="Ingénierie de la Rééduction, du Handicap et de la Performance Motrice">IRHPM</abbr> et concours de Masseur Kinésithérapeute / Master 1 <abbr title="Management du Sport">MS</abbr></p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-title">
+                                <h5>2012</h5>
+                            </div>
+                            <div class="item-text">
+                                <h3>Licence <abbr title="Sciences et Techniques des Activités Physiques et Sportives">STAPS</abbr></h3>
+                                <h4>Université de Poitiers (86)</h4>
+                                <p>Licence <abbr title="Sciences et Techniques des Activités Physiques et Sportives">STAPS</abbr> <abbr title="Activité Physique Adaptée et Santé">APAS</abbr></p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-title">
+                                <h5>2007</h5>
+                            </div>
+                            <div class="item-text">
+                                <h3>Baccalauréat Sciences et Techniques de l'Agronomie et de l'Environnement</h3>
+                                <h4>Lycée de l'Oisellerie, La Couronne (16)</h4>
+                                <!-- <p></p> -->
+                            </div>
+                        </div>
+                    </div>
+                <!-- </div> -->
+            </div>       
+        </section>
+       <!-- Educational background end -->
+       <!-- Experiences -->
+        <section id="experience">
+            <div class="container" id="experience-content">
+                <div id="experience-content-title">
+                    <h2>
+                        Mes expériences porfessionnelles
+                    </h2>
+                </div>
+                <div id="experience-content-text">
+                    <div class="item">
+                        <div class="item-title">
+                            <h5>Mai 2023</h5>
+                        </div>
+                        <div class="item-text">
+                            <h3>Projet O'Dicey</h3>
+                            <h4>Formation <abbr title="Développeur Web et Web Mobile">DWWM</abbr></h4>
+                            <p>Back-end - Scrum Master - API - Back-office - MVC - Fixtures - Sécurité</p>
+                            <p>Projection/anticipation - Gestion des échéances - Créativité</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-title">
+                            <h5>Déc. 2018 - Mai 2023</h5>
+                        </div>
+                        <div class="item-text">
+                            <h3>Agent de développement sportif</h3>
+                            <h4><abbr title="Groupement d'Employeurs Sport Animation Santé 86">GE SAS 86</abbr></h4>
+                            <p>Conception/animation de séances - Gestion du temps</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-title">
+                            <h5>Jan. 2016 - Fév. 2017 / Fév. 2017 - Sep. 2018</h5>
+                        </div>
+                        <div class="item-text">
+                            <h3>Educateur Sportif / Educateur Coordinateur</h3>
+                            <h4><abbr title="Foyer d'Accueil Médicalisé">FAM</abbr> le <abbr title="Centre pour Adulte avec Autisme en Poitou">CAAP</abbr></h4>
+                            <p>Coordination d'équipe - Communication/écoute - Prise en compte des particularités de chacun</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-title">
+                            <h5>Juil. 2015 - Nov. 2015</h5>
+                        </div>
+                        <div class="item-text">
+                            <h3>Aide livreur et manutention de stock</h3>
+                            <h4>Darty</h4>
+                            <p>Sens de l'effort</p>
+                        </div>
+                    </div>
+                </div>
+            </div>       
+        </section>
+      <!-- Experiences end -->
+      <!-- Skills -->
+        <section id="skill">
+            <div class="container">
+                <div id="skill-content">
+                    <div class="skill-block">
+                        <div class="skill-element">
+                            <div class="skill-element-title">
+                                <h2>
+                                    Compétences techniques
+                                </h2>
+                            </div>
+                            <div class="skill-element-list">
+                                <ul class="skill-element-list-frame">
+                                    <li>HTML</li>
+                                    <li>PHP</li>
+                                    <li>Symfony</li>
+                                    <li>Twig</li>
+                                    <li>JavaScript</li>
+                                    <li>Agile</li>
+                                    <li>SCRUM</li>
+                                    <li>MySQL</li>
+                                    <li>MariaDB</li>
+                                    <li>Responsive Design</li>
+                                    <li>Bootstrap</li>
+                                </ul>
+                            </div>                          
+                        </div>
+                        <div class="skill-element">
+                            <div class="skill-element-title">
+                                <h2>
+                                    Langues
+                                </h2>
+                            </div>
+                            <div class="skill-element-list">
+                                <ul class="skill-element-list-frame">
+                                    <li>Français : langue maternelle</li>
+                                    <li>Anglais : intermédiaire A2</li>
+                                </ul>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="skill-block">
+                        <div class="skill-element">
+                            <div class="skill-element-title">
+                                <h2>
+                                    Outils
+                                </h2>
+                            </div>
+                            <div class="skill-element-list">
+                                <ul class="skill-element-list-bullet">
+                                    <li>Systèmes : Git, Github, Linux</li>
+                                    <li>Editeur de code : VS Code</li>
+                                    <li>Conception : Whimsical, Figma</li>
+                                    <li>Gestion de projet : Trello</li>
+                                    <li>Bureautique : Microsoft Office, Libre Office</li>
+                                </ul>
+                            </div>                            
+                        </div>
+                        <div class="skill-element">
+                            <div class="skill-element-title">
+                                <h2>
+                                    Compétences transverses
+                                </h2>
+                            </div>
+                            <div class="skill-element-list">
+                                <ul class="skill-element-list-bullet">
+                                    <li>Travail en équipe</li>
+                                    <li>Facilité d'adaptation</li>
+                                    <li>Curiosité intellectuelle</li>
+                                    <li>Autonomie</li>
+                                    <li>Résolution de problèmes</li>
+                                </ul>
+                            </div>                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Skills end -->
+        <!-- Projects -->
+        <section id="project">
+            <div class="container">
+                <div id="project-content">
+                    <div id="project-content-title">
+                        <h2>
+                            Portfolio
+                        </h2>
+                    </div>
+                    <div id="project-content-list">
+                        <ul class="project-element-list-picture">
+                            <li>
+                                <a href="">
+                                    Futur Projet 1
+                                    <!-- <img src="" alt="Projet 1"> -->
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Futur Projet 2
+                                    <!-- <img src="" alt="Projet 2"> -->
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Futur Projet 3
+                                    <!-- <img src="" alt="Projet 3"> -->
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Futur Projet 4
+                                    <!-- <img src="" alt="Projet 4"> -->
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Futur Projet 5
+                                    <!-- <img src="" alt="Projet 5"> -->
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Projects end -->
+        <!-- Hobbies -->
+        <!-- <section id="hobby">
+            <p href="" class="typewrite" data-period="800" data-type="[ &quot;le Football.&quot;, &quot;faire du vélo.&quot;, &quot;écouter de la musique.&quot;, &quot;la photographie.&quot; , &quot;le développement web.&quot; , &quot;créer des applications web.&quot; ]"><span class="wrap">j'aime cr</span></p>
+        </section> -->
+        <!-- Hobbies end  -->
+        <!-- Contacts -->
+        <section id="contact">
+            <div class="container" id="contact-content">
+                <div id="contact-content-title">
+                    <h2>
+                        Contact
+                    </h2>
+                </div>
+                <div id="contact-content-list">
+                    <ul>
+                        <li><a href="http://www.linkedin.com/in/guillaume-dezerce"><img class="logo" src="Assets/linkedin.svg" alt="logo LinkedIn"></a></li>
+                        <li><a href="https://github.com/GuillaumeDEZERCE"><img class="logo" src="Assets/github.svg" alt="logo GitHub"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- contacts end -->
         
-        <h3>
-            Mes formations
-        </h3>
-        
-        <h3>
-            Mes expériences porfessionnelles
-        </h3>
-        <h4>
-            Compétences techniques
-        </h4>
-        <h4>
-            Langues
-        </h4>
-        <h4>
-            Outils
-        </h4>
-        <h4>
-            Savoir-être
-        </h4>
-        <h5>
-            Portfolio
-        </h5>
-        <h6>
-            Contact
-        </h6>
     </main>
 
     <footer>
-        <!-- ⓒ 2022 | Guillaume Dezerce | liens Mentions Légales -->
+        <p>
+            ⓒ 2023 | Guillaume Dezerce | liens Mentions Légales
+        </p>
     </footer>
-
-    
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </html>
