@@ -93,7 +93,7 @@ p {
     min-width: 320px;
     border: 1px solid black;
     text-align: center;
-    padding: 3rem 0.5rem 3rem 0.5rem;
+    padding: 2.5rem 0.5rem 3rem 0.5rem;
 }
 
 #home-text h1 {
@@ -104,7 +104,7 @@ p {
     height: 30px;
     width: 30px;
     align-self:center; 
-    translate: 0 6rem;  
+    translate: 0 4rem;  
 }
 
 #down-arrow img {
@@ -467,7 +467,7 @@ footer p {
     }
 
     #home-text {
-        padding: 6rem 3rem 6rem 3rem;
+        padding: 5rem 3rem 6rem 3rem;
     }
     
 
