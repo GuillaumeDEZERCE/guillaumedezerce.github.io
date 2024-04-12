@@ -1,3 +1,7 @@
+body {
+    background-color: #effafd;
+}
+
 .container {
     height: 100%;
     display: flex;
@@ -73,6 +77,7 @@ h5 {
 
 p {
     line-height: 1.5rem;
+    color: rgb(110, 110, 110);
 }
 
 /* Homepage */
@@ -91,7 +96,8 @@ p {
 
 #home-text {
     min-width: 320px;
-    border: 1px solid black;
+    border: 3px solid black;
+    border-radius: 25px;
     text-align: center;
     padding: 2.5rem 0.5rem 3rem 0.5rem;
 }
