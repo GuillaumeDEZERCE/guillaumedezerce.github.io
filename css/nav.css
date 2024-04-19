@@ -1,0 +1,88 @@
+.nav-bar{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.GD-icon{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.nav-bar nav{
+    display: none;
+}
+
+.nav-bar nav ul{
+    width : 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar nav ul li{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+/* Burger icon */
+
+.burger-icon{
+    width: min-content;
+    height: min-content;
+    padding: 4px;
+    margin-left: 1rem;
+    border: 1px solid black;
+}
+
+.burger{
+    width: 42px;
+    height: 38px;
+    cursor: pointer;
+    position: relative;
+}
+
+.burger span{
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    display: block;
+    position: absolute;
+    top: 45%;
+    transform: -50%;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.burger span::before, .burger span::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    transition: transform 0.5s ease-in-out;
+}
+
+.burger span::before{
+    transform: translateY(-10px);
+}
+
+.burger span::after{
+    transform: translateY(10px);
+}
+
+.burger.active span{
+    background-color: transparent;
+}
+.burger.active span::before{
+    transform: translateY(0px) rotateZ(45deg);
+}
+
+.burger.active span::after{
+    transform: translateY(0px) rotateZ(-45deg);
+}
