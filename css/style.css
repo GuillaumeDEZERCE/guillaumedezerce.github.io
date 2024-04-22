@@ -33,16 +33,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 128px;
-    height: 128px;
-    min-width: 128px;
-    min-height: 128px;
-    max-width: 128px;
-    max-height: 128px;
+    width: 100px;
+    height: 100px;
+    min-width: 100px;
+    min-height: 100px;
+    max-width: 100px;
+    max-height: 100px;
 }
 
 .item-text {
-    min-width: 350px;
+    min-width: 280px;
     max-width: 90%;
     border: 3px solid black;
     border-radius: 25px;
@@ -99,11 +99,13 @@ p {
 }
 
 #home-text {
-    min-width: 320px;
+    min-width: 280px;
     border: 3px solid black;
     border-radius: 25px;
     text-align: center;
     padding: 2.5rem 0.5rem 3rem 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 #home-text h1 {
@@ -182,7 +184,8 @@ p {
 /* Educational background */
 
 #education {
-    /* background-color: blueviolet; */
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 #education-content {
@@ -213,7 +216,8 @@ p {
 /* Experiences */
 
 #experience {
-    /* background-color: rgb(43, 226, 113); */
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 #experience-content {
