@@ -27,7 +27,7 @@ body {
 
 .item-title {
     border: 3px solid black;
-    border-radius: 70px;
+    border-radius: 50%;
     padding: 1rem;
     margin-bottom: 1rem;
     display: flex;
@@ -113,8 +113,15 @@ p {
 #down-arrow {
     height: 30px;
     width: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
     align-self:center; 
     translate: 0 4rem;  
+    /* background-color: #a0006d; */
+}
+
+#down-arrow:hover{
+    background-color: #a0006d;
 }
 
 #down-arrow img {
@@ -259,6 +266,9 @@ p {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+
 }
 
 .skill-element {
@@ -306,9 +316,9 @@ p {
 }
 
 .skill-element-list-frame li {
-    color: white;
-    background-color: black;
-    border: 2px solid black;
+    color: #effafd;
+    background-color: #a0006d;
+    border: 2px solid #a0006d;
     border-radius: 30px;
     padding: 0.5rem;
     margin-right: 1rem;
@@ -384,6 +394,8 @@ p {
     height: 230px;
     border-radius: 30px;
     margin-bottom: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
     display: flex;
     justify-content: center;
     align-items: center;

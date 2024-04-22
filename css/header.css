@@ -1,35 +1,58 @@
 .nav-bar{
+    background-color: #4a8bdf;
     width: 100%;
     position: fixed;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    z-index: 9999;
 }
 
 .nav-bar a{
     text-decoration: none;
-    font-size: 22px;
+    font-size: 1.3rem;
+    color: #effafd;
 }
+
+/* GD icon */
 
 .GD-icon{
     margin-left: 1rem;
     margin-right: 1rem;
+    align-self: center;
+    width: 50%;
+    font-weight: bold;
 }
 
-.nav-bar nav{
+/* nav-bar main content*/
+
+.main-nav{
     display: none;
+    padding: 0.5rem;
+    width: 100%;
 }
 
-.nav-bar nav ul{
-    width : 100%;
+.main-nav.active{
     display: flex;
-    justify-content: space-between;
 }
 
-.nav-bar nav ul li{
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+.main-nav ul{
+    width : 100%;
+    justify-content: end;
 }
+
+.main-nav ul li{
+    margin: 0.6rem;  
+}
+
+.main-nav a{
+    transition: 0.3s;
+}
+
+.main-nav a:hover{
+    color: #a0006d;
+}
+
 
 /* Burger icon */
 
@@ -38,7 +61,6 @@
     height: min-content;
     padding: 4px;
     margin-left: 1rem;
-    border: 1px solid black;
 }
 
 .burger{
@@ -51,12 +73,12 @@
 .burger span{
     width: 100%;
     height: 4px;
-    background-color: black;
+    background-color: #effafd;
     display: block;
     position: absolute;
     top: 45%;
     transform: -50%;
-    transition: background-color 0.5s ease-in-out;
+    transition: background-color 0.1s ease-in-out;
 }
 
 .burger span::before, .burger span::after{
@@ -64,7 +86,7 @@
     position: absolute;
     width: 100%;
     height: 4px;
-    background-color: black;
+    background-color: #effafd;
     transition: transform 0.5s ease-in-out;
 }
 
@@ -81,8 +103,30 @@
 }
 .burger.active span::before{
     transform: translateY(0px) rotateZ(45deg);
+    width: 80%;
 }
 
 .burger.active span::after{
     transform: translateY(0px) rotateZ(-45deg);
+    width: 80%;
+}
+
+@media (min-width: 768px){
+    .GD-icon{
+        width: min-content;
+    }
+
+    .main-nav{
+        display: flex;
+        width: 90%;
+        padding-left: 0;
+    }
+    
+    .main-nav ul {
+        display: flex;
+    }
+    
+    .burger-icon{
+        display: none;
+    }
 }
