@@ -3,7 +3,7 @@
 const burger = document.querySelector('.burger');
 const main_nav = document.querySelector('.main-nav');
 const nav_link = document.querySelectorAll('.nav-link');
-// const main = document.getElementsByTagName('main');
+// const main_container = document.getElementsByTagName('main-container');
 // const footer = document.getElementsByTagName('footer');
 
 
@@ -12,9 +12,9 @@ burger.addEventListener('click', () => {
     main_nav.classList.toggle('active');
 })
 
-// main.addEventListener('click', () => {
-//      burger.classList.toggle('active');
-//      main_nav.classList.toggle('active');
+// main_container.addEventListener('', () => {
+//     burger.classList.toggle('active');
+//     main_nav.classList.toggle('active');
 // })
 
 // footer.addEventListener('click', () => {
@@ -23,13 +23,13 @@ burger.addEventListener('click', () => {
 // })
 
 
-
 for (const link of nav_link) {
     link.addEventListener('click', () => {
         burger.classList.toggle('active');
         main_nav.classList.toggle('active');
     })
 }
+
 
 // legal notice
 
