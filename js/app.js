@@ -3,31 +3,26 @@
 const burger = document.querySelector('.burger');
 const main_nav = document.querySelector('.main-nav');
 const nav_link = document.querySelectorAll('.nav-link');
-// const main_container = document.getElementsByTagName('main-container');
-// const footer = document.getElementsByTagName('footer');
+const main_container = document.getElementById('main-container');
+const footer_container = document.getElementById('footer-container');
 
-
-burger.addEventListener('click', () => {
-    burger.classList.toggle('active');
-    main_nav.classList.toggle('active');
-})
-
-// main_container.addEventListener('', () => {
-//     burger.classList.toggle('active');
-//     main_nav.classList.toggle('active');
-// })
-
-// footer.addEventListener('click', () => {
-//      burger.classList.toggle('active');
-//      main_nav.classList.toggle('active');
-// })
-
+burger.addEventListener('click', handleToogleActiveClass);
 
 for (const link of nav_link) {
-    link.addEventListener('click', () => {
-        burger.classList.toggle('active');
-        main_nav.classList.toggle('active');
-    })
+    link.addEventListener('click', handleToogleActiveClass);
+}
+
+function handleToogleActiveClass() {
+    burger.classList.toggle('active');
+    main_nav.classList.toggle('active');
+}
+
+main_container.addEventListener('click', handleClickOutsideNav);
+footer_container.addEventListener('click', handleClickOutsideNav);
+
+function handleClickOutsideNav() {
+    burger.classList.remove('active');
+    main_nav.classList.remove('active');
 }
 
 
