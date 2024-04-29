@@ -56,7 +56,7 @@ body {
 }
 
 h1 {
-    font-size: 2.3rem;
+    font-size: 2.1rem;
 }
 
 h2 {
@@ -109,17 +109,27 @@ p {
 }
 
 #home-text {
+    width : 310px;
+    height : 270px;
     border: 3px solid #effafd;
     border-radius: 25px;
-    text-align: center;
-    padding: 2.5rem 0.5rem 3rem 0.5rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    display: block;
+    align-content: flex-start;
+    /* justify-content: ; */
+    /* padding: 0.5rem 0.5rem 1rem 0.5rem; */
+    /* margin-left: 1rem;
+    margin-right: 1rem; */
     color: #effafd;
 }
 
 #home-text h1 {
-    margin-bottom: 1rem;
+    margin: 2rem 0.5rem;
+    font-family: Open sans;
+    font-weight: 400;
+    line-height: 3rem;
+    color: #effafd;
+    display: inline-block;
+    position: relative;    
 }
 
 #down-arrow {
@@ -142,6 +152,33 @@ p {
     max-width: 100%;
     max-height: 100%;
 }
+
+    /* typewriter effect */
+  
+      /* h1::after {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 2.5rem;
+        width: 3px;
+        background: #dadada;
+        right: -5px;
+        bottom: 0;
+        animation: cursor 1s infinite;
+        animation-delay: 5s;
+      }
+      
+      @keyframes cursor {
+        0% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+      }  */
 
 /* About me */
 
@@ -279,41 +316,32 @@ p {
     flex-direction: column;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
-
 }
 
 .skill-element {
     width: 100%;
     display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.skill-element-title {
-    width: min-content;
-    border-bottom: 2px solid black;
+    /* height : 270px; */
+    /* border-bottom: 2px solid black; */
     padding-top: 1rem;
     padding-bottom: 1rem;
-    margin-top: 4rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-bottom: 2rem;
+    margin: 2rem;
     display: block;
 }
 
 .skill-element-title h2 {
+    margin-left: 0.5rem;
     text-align: center;
     width: min-content;
 }
 
 
 .skill-element-list {
-    width: 100%;
+    width: fit-content;
+    height: 100%;
     padding-top: 1rem;
-    padding-left: 3rem;
-    padding-right: 2rem;
     padding-bottom: 1rem;
-    margin-left: 1rem;
+    margin-left: 1.5rem;
     margin-right: 1rem;
     font-size: 1.3rem;
 }
@@ -544,70 +572,6 @@ p {
     max-height: 100%;
 }
 
-/* footer */
-
-footer p {
-    text-align: center;
-    padding-top: 1rem;
-    padding: 1rem;
-    font-size: 0.8rem;
-}
-
-#legal-notice-btn {
-    text-decoration: none;
-    font-size: 0.8rem;
-    line-height: 1.5rem;
-    color: rgb(110, 110, 110);
-}
-
-#legal-notice-btn:hover {
-    color: rgb(150, 150, 150);
-}
-
-/* legal notice */
-
-.legal-notice-background {
-    position: fixed; 
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-    top: 0;
-    left: 0;
-    display: none;
-}
-
-.legal-notice {
-    position: fixed;
-    z-index: 9;
-    left: 15%;
-    right: 15%;
-    top: 20%;
-    bottom: 20%;
-    background-color: #f6fdff;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    padding: 2rem 1.5rem 2rem 1.5rem;
-    display: none;
-}
-
-.legal-notice h3 { 
-    font-size: 1.2rem;
-}
-
-.legal-notice p { 
-    text-align: left;
-}
-  
-.legal-notice-on {
-    display: block;
-    animation: .3s 0s 1 pop;
-}
-  
-.legal-notice-close {
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
 /* highlighting a part of the website */
 
 .promote {
@@ -621,15 +585,24 @@ footer p {
 
 /* responsive */
 @media (min-width: 768px) {
+
+    h1 {
+        font-size: 2.3rem;
+    }
+
     h2 {
         font-weight: bold;
     }
 
     #home-text {
-        padding: 5rem 3rem 6rem 3rem;
+        width: 600px;
+        height : 300px;
+    }
+
+    #home-text h1 {
+        margin: 2.5rem 5rem;
     }
     
-
     #me {
         height: 100vh;
     }
@@ -658,21 +631,17 @@ footer p {
     }
 
     #skill-content {
-      flex-direction: row;
-      align-items:start;
-      padding: 2rem;
+        flex-direction: row;
+        align-items:start;
+        padding: 2rem;
     }
 
-    footer p {
-        padding: 1rem;
-        font-size: 1rem;
+    .skill-element {
+        margin-top: 4rem;
     }
 
-    #legal-notice-btn {
-        font-size: 1rem;
-    }
-
-    .legal-notice h3 { 
-        font-size: 2rem;
+    .skill-element-list {
+        padding-left: 3rem;
+        padding-right: 2rem;
     }
 }

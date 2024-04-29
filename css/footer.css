@@ -1,0 +1,79 @@
+/* footer */
+
+footer p {
+    text-align: center;
+    padding-top: 1rem;
+    padding: 1rem;
+    font-size: 0.8rem;
+}
+
+#legal-notice-btn {
+    text-decoration: none;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    color: rgb(110, 110, 110);
+}
+
+#legal-notice-btn:hover {
+    color: rgb(150, 150, 150);
+}
+
+/* legal notice */
+
+.legal-notice-background {
+    position: fixed; 
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.legal-notice {
+    position: fixed;
+    z-index: 9;
+    left: 15%;
+    right: 15%;
+    top: 20%;
+    bottom: 20%;
+    background-color: #f6fdff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    padding: 2rem 1.5rem 2rem 1.5rem;
+    display: none;
+}
+
+.legal-notice h3 { 
+    font-size: 1.2rem;
+}
+
+.legal-notice p { 
+    text-align: left;
+}
+  
+.legal-notice-on {
+    display: block;
+    animation: .3s 0s 1 pop;
+}
+  
+.legal-notice-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* responsive */
+@media (min-width: 768px) {
+    footer p {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    #legal-notice-btn {
+        font-size: 1rem;
+    }
+
+    .legal-notice h3 { 
+        font-size: 2rem;
+    }
+}
