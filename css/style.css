@@ -84,7 +84,7 @@ h5 {
 }
 
 p {
-    line-height: 1.5rem;
+    line-height: 1.8rem;
     color: rgb(110, 110, 110);
 }
 
@@ -498,6 +498,14 @@ p {
 .image-box:hover button {
     display: flex;
 }
+
+#temporary-message {
+    margin-top: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
 
 
 
