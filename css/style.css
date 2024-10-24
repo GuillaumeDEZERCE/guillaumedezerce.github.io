@@ -6,6 +6,7 @@ body{
 body {
     background-color: #effafd;
     font-family: "Roboto Slab", serif;
+    color: rgb(34, 66, 124) ;
 }
 
 .container {
@@ -28,7 +29,9 @@ body {
 }
 
 .item-title {
-    border: 3px solid black;
+    color: #effafd;
+    /* border: 3px solid rgb(34, 66, 124) ; */
+    background-color: rgb(34, 66, 124);
     border-radius: 50%;
     padding: 1rem;
     margin-bottom: 1rem;
@@ -44,8 +47,10 @@ body {
 }
 
 .item-text {
+    color: #effafd;
     max-width: 90%;
-    border: 3px solid black;
+    /* border: 3px solid rgb(34, 66, 124) ; */
+    background-color: rgb(34, 66, 124);
     border-radius: 25px;
     padding: 1rem;
 }
@@ -82,7 +87,7 @@ h5 {
 
 p {
     line-height: 1.8rem;
-    color: rgb(110, 110, 110);
+    color: rgb(170, 170, 190);
 }
 
 /* Homepage */
@@ -180,7 +185,7 @@ p {
 }
 
 #profil-picture {
-    border: 3px solid black;
+    /* border: 3px solid rgb(34, 66, 124) ; */
     margin-top: 4rem;
     margin-bottom: 2rem;
     border-radius: 50%;
@@ -204,7 +209,7 @@ p {
 }
 
 #text-content h2 {
-   border-bottom: 2px solid black;
+   border-bottom: 2px solid rgb(34, 66, 124) ;
    padding-bottom: 1rem;
    margin-bottom: 3rem;
 }
@@ -230,7 +235,7 @@ p {
 }
 
 #education-content-title {
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid rgb(34, 66, 124) ;
     padding-top: 1rem;
     padding-bottom: 1rem;
     margin-top: 4rem;
@@ -265,7 +270,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid rgb(34, 66, 124) ;
     padding-top: 1rem;
     padding-bottom: 1rem;
     margin-top: 4rem;
@@ -326,7 +331,7 @@ p {
     padding: 0.5rem 0;
     margin-bottom: 1rem;
     text-align: center;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid rgb(34, 66, 124) ;
     width: min-content;
 }
 
@@ -351,8 +356,8 @@ p {
 
 .skill-element-list-frame li {
     color: #effafd;
-    background-color: black;
-    border: 2px solid black;
+    background-color: rgb(34, 66, 124) ;
+    /* border: 2px solid rgb(34, 66, 124); */
     border-radius: 30px;
     padding: 0.5rem;
     margin-right: 1rem;
@@ -383,7 +388,7 @@ p {
 }
 
 #project-content-title {
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid rgb(34, 66, 124) ;
     padding-top: 1rem;
     padding-bottom: 1rem;
     margin-top: 4rem;
@@ -523,7 +528,7 @@ p {
 }
 
 #contact-content-title {
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid rgb(34, 66, 124) ;
     padding-top: 1rem;
     padding-bottom: 1rem;
     margin-top: 2rem;
@@ -576,12 +581,18 @@ p {
 /* highlighting a part of the website */
 
 .promote {
-    border: 3px solid #a0006d;
+    background-color: rgb(220, 174, 151);
+    color: rgb(34, 66, 124);
+}
+
+.promote p {
+    color: rgb(80, 120, 170);
 }
 
 .skill-promote li {
-    background-color: #a0006d;
-    border: 2px solid #a0006d; 
+    background-color: rgb(220, 174, 151);
+    /* border: 2px solid rgb(34, 66, 124);  */
+    color: rgb(34, 66, 124);
 }
 
 /* responsive */
