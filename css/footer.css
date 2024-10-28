@@ -1,6 +1,11 @@
 /* footer */
 
+footer {
+    background-color: rgb(34, 66, 124);
+}
+
 footer p {
+    color: rgb(220, 174, 151);
     text-align: center;
     padding-top: 1rem;
     padding: 1rem;
@@ -11,11 +16,11 @@ footer p {
     text-decoration: none;
     font-size: 0.8rem;
     line-height: 1.5rem;
-    color: rgb(170, 170, 190);
+    color: rgb(220, 174, 151);
 }
 
 #legal-notice-btn:hover {
-    color: rgb(130, 130, 130);
+    color: #f6fdff;
 }
 
 /* legal notice */

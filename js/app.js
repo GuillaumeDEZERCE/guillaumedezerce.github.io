@@ -34,7 +34,7 @@ var aText = new Array(
     "Développeur web",
     "Full-Stack / Back"
 );
-var iSpeed = 100; // time delay of print out
+var iSpeed = 120; // time delay of print out
 var iIndex = 0; // start printing array at this posision
 var iArrLength = aText[0].length; // the length of the text array
 var iScrollAt = 20; // start scrolling up at this many lines
@@ -66,6 +66,48 @@ function typewriter()
 }
 
 typewriter();
+
+
+// // set up text to print, each item in array is new line
+// var aText1 = new Array(
+//     "A propos de moi",
+// );
+// // var iSpeed1 = 150; // time delay of print out
+// var iIndex1 = 0; // start printing array at this posision
+// var iArrLength1 = aText1[0].length; // the length of the text array
+// var iScrollAt1 = 20; // start scrolling up at this many lines
+    
+// var iTextPos1 = 0; // initialise text position
+// var sContents1 = ''; // initialise contents variable
+// var iRow1; // initialise current row
+    
+// function typewriter1()
+// {
+//     sContents1 =  ' ';
+//     iRow1 = Math.max(0, iIndex1-iScrollAt1);
+//     var destination1 = document.querySelector('#secondary-title-1');
+    
+//     while ( iRow1 < iIndex1 ) {
+//     sContents1 += aText1[iRow1++] + '<br />';
+//     }
+//     destination1.innerHTML = sContents1 + aText1[iIndex1].substring(0, iTextPos1) + "<span>_</span>";
+//     if ( iTextPos1++ == iArrLength1 ) {
+//     iTextPos1 = 0;
+//     iIndex1++;
+//     if ( iIndex1 != aText1.length ) {
+//     iArrLength = aText1[iIndex1].length;
+//     setTimeout("typewriter1()", 500);
+//     }
+//     } else {
+//     setTimeout("typewriter1()", iSpeed);
+//     }
+// }
+
+// typewriter1();
+
+// var meContent = document.querySelector('#me-content');
+// console.log(document.scrollingElement);
+
 
 // legal notice
 

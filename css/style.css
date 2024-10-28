@@ -70,6 +70,7 @@ h1 {
 
 h2 {
     font-size: 2.5rem;
+    font-weight: 500;
 }
 
 h3 {
@@ -156,24 +157,6 @@ p {
     max-height: 100%;
 }
 
-    /* typewriter effect */
-  
-    h1 span {
-        animation: cursor 1s infinite;
-    }
-    
-    @keyframes cursor {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-    } 
-
 /* About me */
 
 #me {
@@ -190,7 +173,7 @@ p {
 
 #profil-picture {
     /* border: 3px solid rgb(34, 66, 124) ; */
-    margin-top: 4rem;
+    margin-top: 2rem;
     margin-bottom: 2rem;
     border-radius: 50%;
     overflow: hidden;
@@ -209,7 +192,7 @@ p {
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    margin-bottom: 2rem;
+    margin: 2rem 2rem 4rem 2rem;
 }
 
 #text-content h2 {
@@ -221,11 +204,13 @@ p {
 #text-content p {
     padding: 1rem;
     width: 100%;
+    color: rgb(50, 80, 124);
 }
 
 /* Educational background */
 
 #education {
+    background-color: rgb(230, 240, 250);
     padding-left: 1rem;
     padding-right: 1rem;
 }
@@ -297,6 +282,10 @@ p {
 }
 
 /* Skills */
+
+#skill {
+    background-color: rgb(230, 240, 250);
+}
 
 #skill-content {
     width: 100%;
@@ -667,3 +656,22 @@ p {
         padding-right: 2rem;
     }
 }
+
+/* typewriter effect */
+  
+h1 span,
+h2 span {
+    animation: cursor 1s infinite;
+}
+
+@keyframes cursor {
+0% {
+    opacity: 1;
+}
+50% {
+    opacity: 0;
+}
+100% {
+    opacity: 1;
+}
+} 
