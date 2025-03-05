@@ -31,8 +31,8 @@ function handleClickOutsideNav() {
 var aText = new Array(
     "Je suis",
     "Guillaume Dezerce,",
-    "Développeur web",
-    "Full-Stack / Back"
+    "Développeur web"
+    // "Full-Stack / Back"
 );
 var iSpeed = 120; // time delay of print out
 var iIndex = 0; // start printing array at this posision
@@ -68,11 +68,11 @@ function typewriter()
 typewriter();
 
 
-// // set up text to print, each item in array is new line
 // var aText1 = new Array(
 //     "A propos de moi",
 // );
-// // var iSpeed1 = 150; // time delay of print out
+
+// var iSpeed1 = 120; // time delay of print out
 // var iIndex1 = 0; // start printing array at this posision
 // var iArrLength1 = aText1[0].length; // the length of the text array
 // var iScrollAt1 = 20; // start scrolling up at this many lines
@@ -81,8 +81,7 @@ typewriter();
 // var sContents1 = ''; // initialise contents variable
 // var iRow1; // initialise current row
     
-// function typewriter1()
-// {
+// function typewriter1() {
 //     sContents1 =  ' ';
 //     iRow1 = Math.max(0, iIndex1-iScrollAt1);
 //     var destination1 = document.querySelector('#secondary-title-1');
@@ -99,14 +98,37 @@ typewriter();
 //     setTimeout("typewriter1()", 500);
 //     }
 //     } else {
-//     setTimeout("typewriter1()", iSpeed);
+//     setTimeout("typewriter1()", iSpeed1);
 //     }
+//     // console.log(typewriter1);
 // }
 
-// typewriter1();
+// // function newtext() {
+//     // set up text to print, each item in array is new line
+//     // var aText1 = new Array(
+//     //     "A propos de moi",
+//     // );
+    
+// //     console.log(typewriter1());
+// // }
 
-// var meContent = document.querySelector('#me-content');
-// console.log(document.scrollingElement);
+// // newtext();
+
+// // console.log(aText1);
+
+// const options = {
+//     root: null,
+//     rootMargin: '0px',
+//     threshold: 1
+// }
+
+// const observer = new IntersectionObserver(typewriter1, options);
+// observer.observe(document.querySelector('#secondary-title-1'));
+
+// // typewriter1();
+
+// // var meContent = document.querySelector('#me-content');
+// // console.log(document.scrollingElement);
 
 
 // legal notice
